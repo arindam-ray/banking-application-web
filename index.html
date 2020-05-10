@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Application</title>
+    <link rel="icon" href="images/logo.png">
+</head>
+
+<body bgcolor="#DFECFB">
+    <center>
+        <img src="images/logo.png" width="70" alt=""><br>
+        <font face="arial" size="6"> Nice Bank </font>
+    </center>
+    <font face="arial" size="4">
+
+        <form action="" method="POST">
+            <table align="center" border="0" width="50%" bgcolor=white>
+                <caption>
+                    <h1>Banking Application</h1>
+                </caption>
+                <tr bgcolor="#A1CCFE">
+                    <td>1. Account No. *</td>
+                    <td><input type="text" name="AccountNo" maxlength="16" size="30" pattern="[0-9]{11}"
+                            title="11 digit account no" placeholder=" &#9998 Enter Acount No (16 Digits)" required
+                            autocomplete="off">
+                    </td>
+                </tr>
+                <tr bgcolor="#A1CCFE">
+                    <td>2. First Holder Name *</td>
+                    <td><input type="text" name="FirstHolderName" maxlength="50" size="50" pattern="[a-zA-Z ]+"
+                            title="Only alphabets up to 50 letters" placeholder="&#9785 Enter Acount Holder Name"
+                            required autocomplete="off"></td>
+                </tr>
+                <tr bgcolor="#A1CCFE">
+                    <td>3. Second Holder Name *</td>
+                    <td><input type="text" name="SecondHolderName" maxlength="50" size="50" pattern="[a-zA-Z ]+"
+                            title="Only alphabets up to 50 letters" placeholder="&#9785 Enter Acount Holder Name"
+                            required autocomplete="off" disabled></td>
+                </tr>
+                <tr bgcolor="#A1CCFE">
+                    <td>4. Registered Mobile No.(10 Digits) * </td>
+                    <td><input type="number" name="mobileNo" min=1000000000 max=9999999999
+                            title="Only 10 digit mobile no" placeholder="&#9742 Enter Acount Holder Name" required
+                            autocomplete="off"> </td>
+                </tr>
+                <tr bgcolor="#A1CCFE">
+                    <td>5. Account Holder Address</td>
+                    <td><textarea name="address" rows="5" cols="46"
+                            placeholder="&#9962 Enter Acount Holder Name"></textarea> </td>
+                </tr>
+
+                <tr bgcolor="#A1CCFE">
+                    <td>6. Email</td>
+                    <td><input type="email" name="Email" size="50" placeholder="&#9993 Enter Email Id"></td>
+                </tr>
+                <tr bgcolor="#A1CCFE">
+                    <td>7. Date of Birth</td>
+                    <td><input type="date" name="dob" min="2000-01-01" max="2020-12-31" value="2020-03-16"></td>
+                </tr>
+                <tr bgcolor="#A1CCFE">
+                    <td>8. City</td>
+                    <td><select name="City">
+                            <option value="Chennai">Chennai</option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="New Delhi" selected>New Delhi</option>
+                            <option value="Kolkata">Kolkata</option>
+                        </select> </td>
+                </tr>
+                <tr bgcolor="#A1CCFE">
+                    <td>9. Gender</td>
+                    <td> <input type="radio" id="male" name="gender" value="male">Male
+                        <input type="radio" id="male" name="gender" value="female">Female
+                        <input type="radio" id="male" name="gender" value="others">Others
+                    </td>
+                </tr>
+                <tr bgcolor="#A1CCFE">
+                    <td>10. Choice of Service</td>
+                    <td> <input type="checkbox" value="PassBookViewing">Pass Book Viewing <br>
+                        <input type="checkbox" value="MoneyTransfer">Money Transfer <br>
+                        <input type="checkbox" value="CheckBookIssue" checked>Check Book Issue <br>
+                        <input type="checkbox" value="BankDraftIssue">Bank Draft Issue
+                    </td>
+                </tr>
+                <tr bgcolor="#A1CCFE" align="center">
+                    <td colspan="2"><input type="submit" value="&#9989; Save">
+                        <input type="Reset" value="&#10060; Clear">
+                    </td>
+                </tr>
+                <tr bgcolor="#A1CCFE" align="center">
+                    <td colspan="2">
+                        * All fields are mandatory
+                    </td>
+                </tr>
+
+            </table>
+
+        </form>
+    </font>
+</body>
+
+</html>
