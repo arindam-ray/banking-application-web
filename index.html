@@ -22,38 +22,39 @@
                 </caption>
                 <tr bgcolor="#A1CCFE">
                     <td>1. Account No. *</td>
-                    <td><input type="text" name="AccountNo" maxlength="16" size="30" pattern="[0-9]{11}"
-                            title="11 digit account no" placeholder=" &#9998 Enter Acount No (16 Digits)" required
+                    <td><input type="text" name="AccountNo" maxlength="11" size="30" pattern="[0-9]{11}"
+                            title="11 digit account no" placeholder=" &#9998 Acount No (11 Digits)" required
                             autocomplete="off">
                     </td>
                 </tr>
                 <tr bgcolor="#A1CCFE">
                     <td>2. First Holder Name *</td>
                     <td><input type="text" name="FirstHolderName" maxlength="50" size="50" pattern="[a-zA-Z ]+"
-                            title="Only alphabets up to 50 letters" placeholder="&#9785 Enter Acount Holder Name"
-                            required autocomplete="off"></td>
+                            title="Only alphabets up to 50 letters" placeholder="&#9785 Account Holder Name 1" required
+                            autocomplete="off"></td>
                 </tr>
                 <tr bgcolor="#A1CCFE">
                     <td>3. Second Holder Name *</td>
                     <td><input type="text" name="SecondHolderName" maxlength="50" size="50" pattern="[a-zA-Z ]+"
-                            title="Only alphabets up to 50 letters" placeholder="&#9785 Enter Acount Holder Name"
-                            required autocomplete="off" disabled></td>
+                            title="Only alphabets up to 50 letters" placeholder="&#9785 Account Holder Name 2" required
+                            autocomplete="off" disabled></td>
                 </tr>
                 <tr bgcolor="#A1CCFE">
                     <td>4. Registered Mobile No.(10 Digits) * </td>
                     <td><input type="number" name="mobileNo" min=1000000000 max=9999999999
-                            title="Only 10 digit mobile no" placeholder="&#9742 Enter Acount Holder Name" required
+                            title="10 digit mobile no | OTP will send" placeholder="&#9742 Mobile No" required
                             autocomplete="off"> </td>
                 </tr>
                 <tr bgcolor="#A1CCFE">
                     <td>5. Account Holder Address</td>
-                    <td><textarea name="address" rows="5" cols="46"
-                            placeholder="&#9962 Enter Acount Holder Name"></textarea> </td>
+                    <td><textarea name="address" rows="5" cols="46" title="Address for Communication"
+                            placeholder="&#9962 Account Holder Address"></textarea> </td>
                 </tr>
 
                 <tr bgcolor="#A1CCFE">
                     <td>6. Email</td>
-                    <td><input type="email" name="Email" size="50" placeholder="&#9993 Enter Email Id"></td>
+                    <td><input type="email" name="Email" size="50" title="Verificaion will send to this Email"
+                            placeholder="&#9993 Enter Email Id"></td>
                 </tr>
                 <tr bgcolor="#A1CCFE">
                     <td>7. Date of Birth</td>
@@ -77,10 +78,10 @@
                 </tr>
                 <tr bgcolor="#A1CCFE">
                     <td>10. Choice of Service</td>
-                    <td> <input type="checkbox" value="PassBookViewing">Pass Book Viewing <br>
-                        <input type="checkbox" value="MoneyTransfer">Money Transfer <br>
-                        <input type="checkbox" value="CheckBookIssue" checked>Check Book Issue <br>
-                        <input type="checkbox" value="BankDraftIssue">Bank Draft Issue
+                    <td> <input type="checkbox" name="PassbookView" value="Yes">Pass Book Viewing <br>
+                        <input type="checkbox" name="MoneyTransfer" value="Yes">Money Transfer <br>
+                        <input type="checkbox" name="ChequeBookIssue" value="Yes" checked>Cheque Book Issue <br>
+                        <input type="checkbox" name="BankDraftIssue" value="Yes">Bank Draft Issue
                     </td>
                 </tr>
                 <tr bgcolor="#A1CCFE" align="center">
@@ -90,7 +91,7 @@
                 </tr>
                 <tr bgcolor="#A1CCFE" align="center">
                     <td colspan="2">
-                        * All fields are mandatory
+                        * Mandatory Field
                     </td>
                 </tr>
 
